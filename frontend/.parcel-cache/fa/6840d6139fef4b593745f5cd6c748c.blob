@@ -1,0 +1,157 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const initialState = {
+    code: '',
+    model: '',
+    type: '',
+    name: ''
+};
+class addVehicle extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = initialState;
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 19
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 20
+            },
+            __self: this
+        }, "Add Vehicle"), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 21
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 22
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "vcode",
+            className: "form-label",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 23
+            },
+            __self: this
+        }, " Code: "), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            className: "form-control",
+            id: "vcode",
+            "aria-describedby": "emailHelp",
+            value: "",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 24
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 28
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "vmodel",
+            className: "form-label",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 29
+            },
+            __self: this
+        }, " Model:"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            className: "form-control",
+            id: "vmodel",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 30
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 35
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "vtype",
+            className: "form-label",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 36
+            },
+            __self: this
+        }, " Type:"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            className: "form-control",
+            id: "vtype",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 37
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 42
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "vname",
+            className: "form-label",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 43
+            },
+            __self: this
+        }, "Name:"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            className: "form-control",
+            id: "vname",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 44
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "submit",
+            className: "btn btn-primary",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 48
+            },
+            __self: this
+        }, " Add Vehicle "))));
+    }
+}
+exports.default = addVehicle;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

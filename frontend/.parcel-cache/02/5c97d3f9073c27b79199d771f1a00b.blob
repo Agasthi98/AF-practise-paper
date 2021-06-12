@@ -1,0 +1,166 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Navbar extends _react.Component {
+    constructor(props){
+        super(props);
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 10
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
+            class: "navbar navbar-expand-lg navbar-light bg-light",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 11
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "container-fluid",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 12
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "navbar-brand",
+            href: "#",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, "AF Practise Frontend"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            class: "navbar-toggler",
+            type: "button",
+            "data-bs-toggle": "collapse",
+            "data-bs-target": "#navbarNav",
+            "aria-controls": "navbarNav",
+            "aria-expanded": "false",
+            "aria-label": "Toggle navigation",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 16
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            class: "navbar-toggler-icon",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 25
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "collapse navbar-collapse",
+            id: "navbarNav",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 27
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            class: "navbar-nav",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 28
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 29
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link active",
+            "aria-current": "page",
+            href: "#",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 30
+            },
+            __self: this
+        }, "Vehicles")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 34
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link",
+            href: "#",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 35
+            },
+            __self: this
+        }, "Categories")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 39
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link",
+            href: "/add-vehicle",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 40
+            },
+            __self: this
+        }, "Add Vehicles")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 44
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link",
+            href: "#",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 45
+            },
+            __self: this
+        }, "Add Categories")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 49
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            class: "nav-link disabled",
+            href: "#",
+            tabindex: "-1",
+            "aria-disabled": "true",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\navbar\\navbar.js",
+                lineNumber: 50
+            },
+            __self: this
+        }, "Disabled"))))))));
+    }
+}
+exports.default = Navbar;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

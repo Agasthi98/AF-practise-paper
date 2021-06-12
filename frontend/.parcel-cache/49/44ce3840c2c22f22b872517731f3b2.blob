@@ -1,0 +1,41 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Vehicle extends _react.Component {
+    constructor(props){
+        super(props);
+    }
+    // componentDidMount() {
+    //    console.log('COURSE ID', this.props.match.params.id)
+    // }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\vehicles\\vehicles.js",
+                lineNumber: 15
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\vehicles\\vehicles.js",
+                lineNumber: 16
+            },
+            __self: this
+        }, "Vehicles")));
+    }
+}
+exports.default = Vehicle;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

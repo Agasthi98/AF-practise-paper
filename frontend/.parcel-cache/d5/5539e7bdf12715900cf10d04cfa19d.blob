@@ -1,0 +1,289 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+class CalTrip extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            vehicleTypeId: '',
+            categoryTypeId: '',
+            duration: '',
+            vehicle: [],
+            catagory: [],
+            totPrice: '00'
+        };
+        this.onSubmit = this.onSubmit.bind(this);
+        this.onChange = this.onChange.bind(this);
+        _axiosDefault.default.get('http://localhost:5500/api/vehicle/getVehicles').then((response)=>{
+            this.setState({
+                vehicle: response.data
+            });
+        }).catch((error)=>{
+            alert(error.message);
+        });
+        _axiosDefault.default.get('http://localhost:5500/api/category/').then((response)=>{
+            this.setState({
+                catagory: response.data
+            });
+        }).catch((error)=>{
+            alert(error.message);
+        });
+    }
+    onChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+    handleChange = (e)=>{
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    };
+    onSubmit(e) {
+        e.preventDefault();
+        let numbers = {
+            vehTypeId: this.state.vehicleTypeId,
+            catTypeId: this.state.categoryTypeId,
+            duration: this.state.duration
+        };
+        _axiosDefault.default.post('http://localhost:5500/api/category/getvalue', numbers).then((response)=>{
+            this.setState({
+                totPrice: response.data.price
+            });
+        }).catch((error)=>{
+            alert(error.message);
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 67
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container mt-2",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 68
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            className: "form-inline",
+            onSubmit: this.onSubmit,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 69
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "form-group",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 70
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "row mt-2",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 71
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "col-2",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 72
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 73
+            },
+            __self: this
+        }, "Category")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "col-6",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 75
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            id: "inputState",
+            className: "form-control",
+            name: "categoryTypeId",
+            value: this.state.selectValue,
+            onChange: this.handleChange,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 76
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            selected: true,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 83
+            },
+            __self: this
+        }, "Choose"), this.state.catagory && this.state.catagory.map((category)=>/*#__PURE__*/ _reactDefault.default.createElement("option", {
+                value: category._id,
+                name: "categoryTypeId",
+                __source: {
+                    fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                    lineNumber: 85
+                },
+                __self: this
+            }, category.type)
+        ))))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "form-group",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 91
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "row mt-2",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 92
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "col-2",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 93
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 94
+            },
+            __self: this
+        }, "Vehical")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "col-6",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 96
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("select", {
+            id: "inputState",
+            className: "form-control",
+            name: "vehTypeId",
+            value: this.state.selectValue,
+            onChange: this.handleChange,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 97
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("option", {
+            selected: true,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 104
+            },
+            __self: this
+        }, "Choose"), this.state.vehicle.map((vehical)=>/*#__PURE__*/ _reactDefault.default.createElement("option", {
+                value: vehical._id,
+                name: "vehTypeId",
+                __source: {
+                    fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                    lineNumber: 106
+                },
+                __self: this
+            }, vehical.name)
+        ))))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "form-group",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 112
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "row mt-2",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 113
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "col-2",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 114
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "inputState",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 115
+            },
+            __self: this
+        }, "Duration")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "col-6",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 117
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "number",
+            className: "form-control",
+            name: "duration",
+            id: "duration",
+            value: this.state.duration,
+            onChange: this.onChange,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 118
+            },
+            __self: this
+        })))), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "submit",
+            className: "btn btn-primary mt-2",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 128
+            },
+            __self: this
+        }, "Calculate"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "m-5",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 132
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\calTrip\\calTrip.js",
+                lineNumber: 133
+            },
+            __self: this
+        }, "Total Price : ", this.state.totPrice, ".00"))));
+    }
+}
+exports.default = CalTrip;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

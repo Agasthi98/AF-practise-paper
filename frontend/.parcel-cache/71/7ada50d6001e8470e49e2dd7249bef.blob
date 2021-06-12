@@ -1,0 +1,174 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const initialState = {
+    code: '',
+    model: '',
+    type: '',
+    name: ''
+};
+class addVehicle extends _react.Component {
+    constructor(props){
+        super(props);
+        this.onChange = this.onChange.bind(this);
+        this.state = initialState;
+    }
+    onChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 24
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 25
+            },
+            __self: this
+        }, "Add Vehicle"), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 26
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 27
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "vcode",
+            className: "form-label",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 28
+            },
+            __self: this
+        }, " Code: "), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            className: "form-control",
+            id: "vcode",
+            name: "code",
+            "aria-describedby": "emailHelp",
+            value: this.state.code,
+            onChange: this.onChange,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 29
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 33
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "vmodel",
+            className: "form-label",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 34
+            },
+            __self: this
+        }, " Model:"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            className: "form-control",
+            id: "vmodel",
+            name: "model",
+            value: this.state.model,
+            onChange: this.onChange,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 35
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 39
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "vtype",
+            className: "form-label",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 40
+            },
+            __self: this
+        }, " Type:"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            className: "form-control",
+            id: "vtype",
+            name: "type",
+            value: this.state.type,
+            onChange: this.onChange,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 41
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 45
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "vname",
+            className: "form-label",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 46
+            },
+            __self: this
+        }, "Name:"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            className: "form-control",
+            id: "vname",
+            name: "name",
+            value: this.state.name,
+            onChange: this.onChange,
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 47
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "submit",
+            className: "btn btn-primary",
+            __source: {
+                fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\component\\addVehicle\\addVehicle.js",
+                lineNumber: 50
+            },
+            __self: this
+        }, " Add Vehicle "))));
+    }
+}
+exports.default = addVehicle;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

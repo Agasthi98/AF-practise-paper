@@ -1,0 +1,83 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbar = require("./component/navbar/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _reactRouterDom = require("react-router-dom");
+var _addVehicle = require("./component/addVehicle/addVehicle");
+var _addVehicleDefault = parcelHelpers.interopDefault(_addVehicle);
+var _vehicles = require("./component/vehicles/vehicles");
+var _vehiclesDefault = parcelHelpers.interopDefault(_vehicles);
+const App = ()=>{
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\App.js",
+            lineNumber: 10
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
+        __source: {
+            fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\App.js",
+            lineNumber: 11
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navbarDefault.default, {
+        __source: {
+            fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\App.js",
+            lineNumber: 12
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("section", {
+        __source: {
+            fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\App.js",
+            lineNumber: 13
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
+        __source: {
+            fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\App.js",
+            lineNumber: 14
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/add-vehicle",
+        component: _addVehicleDefault.default,
+        __source: {
+            fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\App.js",
+            lineNumber: 15
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("route", {
+        __source: {
+            fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\App.js",
+            lineNumber: 16
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/",
+        component: _vehiclesDefault.default,
+        exact: true,
+        __source: {
+            fileName: "D:\\SLIIT\\Year 3\\Y3S1-SE\\AF\\practise paper\\frontend\\src\\App.js",
+            lineNumber: 17
+        },
+        __self: undefined
+    }))))));
+};
+_c = App;
+exports.default = App;
+var _c;
+$RefreshReg$(_c, "App");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
